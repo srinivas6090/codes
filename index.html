@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <h1>Regitration Form</h1>
+    <form action="1.php" method="post" >
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="enter your name"><br>
+        <label>password:</label>
+        <input type="text" name="password" placeholder="enter your password"><br>
+        <label>email:</label>
+        <input type="text" name="email" placeholder="enter your email"><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="female">female<br>
+        <input type="radio" name="gender" value="male">male<br>
+        <label>languages</label><br>
+        <input type="checkbox" name="languages[]" value="C">C<br>
+        <input type="checkbox" name="languages[]" value="C++">C++<br>
+        <input type="checkbox" name="languages[]" value="Python">Python<br>
+        <input type="submit" name="submit" value="submit">
+    </form>
+</body>
+</html>

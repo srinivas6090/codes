@@ -1,0 +1,37 @@
+DOCKER FILE
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/
+EXPOSE 80
+
+
+
+
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Arithmetic Operations</h1>
+        <input type="number" id="n1" placeholder="Enter first number">
+        <input type="number" id="n2" placeholder="Enter second number">
+        <button onclick="operate('+')">Add</button>
+        <button onclick="operate('-')">Subtract</button>
+        <button onclick="operate('*')">Multiply</button>
+        <button onclick="operate('/')">Divide</button>
+        <div class="result" id="res"></div>
+    </div>
+    <script>
+        function operate(op) {
+            const n1 = parseFloat(document.getElementById('n1').value);
+            const n2 = parseFloat(document.getElementById('n2').value);
+            let r;
+            if (op === '+') r = n1 + n2;
+            if (op === '-') r = n1 - n2;
+            if (op === '*') r = n1 * n2;
+            if (op === '/') r = n1 / n2;
+            document.getElementById('res').innerText = 'Result: ' + r;
+        }
+    </script>
+</body>
+</html>

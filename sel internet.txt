@@ -1,0 +1,31 @@
+package nithin;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+public class Testing {
+
+	public static void main(String[] args) {
+		System.setProperty("web.driver.ie.driver","");
+		WebDriver driver = new InternetExplorerDriver();
+		driver.get("file:///C:\\Users\\Mani Srinivas\\eclipse-workspace\\nithin\\src\\index.html");
+		System.out.println("Test passed");
+		}
+
+}
+
+
+
+<html>
+	<head>
+		<titel>document</title>
+			</head>
+			<body>
+				<button onclick="ShowMe()" ">Click Me</button>
+				</body>
+				<script>
+					function showMe(){
+						window.alert("button clicked");
+						
+					}
+					</script>
+					</html>
